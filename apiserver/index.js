@@ -19,3 +19,5 @@ router.get('/description', function*() {
 })
 
 app.listen(config.api.port)
+
+console.log('api server listening on port %s', config.api.port)

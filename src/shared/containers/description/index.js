@@ -5,9 +5,11 @@ import Layout from '../../components/layout'
 import Nav from '../../components/nav'
 
 import { getDescription } from '../../actions'
+import { serverActions } from '../../common/serverRender'
 
 import './description.less'
 
+@serverActions([getDescription])
 class Description extends Component {
 
   componentWillMount () {

@@ -26,7 +26,8 @@ module.exports = {
     new ExtractTextPlugin('css/[name].css'),
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '../src/template/index.html')
+      template: path.resolve(__dirname, '../src/template/index.html'),
+      filename: 'template/index.html'
     })
   ],
 

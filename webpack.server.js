@@ -26,7 +26,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, './build'),
-    publicPath: config.staticBase,
+    publicPath: config.static.base,
     chunkFilename: 'js/[name].js',
     filename: 'server.js'
   },
