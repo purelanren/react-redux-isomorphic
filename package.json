@@ -1,6 +1,6 @@
 {
   "name": "react-redux-isomorphic",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "koa react redux isomorphic",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/purelanren/react-redux-isomorphic.git"
   },
-  "author": "",
+  "author": "purelanren",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/purelanren/react-redux-isomorphic/issues"
