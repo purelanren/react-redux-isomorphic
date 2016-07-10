@@ -42,10 +42,10 @@ app.use(function *() {
         </Provider>
       )
 
-      const initialSate = `window.INITIAL_STATE = ${JSON.stringify(store.getState())}`
+      const initialSate = `<script>window.__INITIAL_STATE__ = ${JSON.stringify(store.getState())}</script>`
 
       let template = html.replace('@reactString', reactString)
-      template = template.replace('@initialSate', initialSate)
+      template = template.replace('<script type="text/html"></script>', initialSate)
       this.type = 'text/html'
       this.body = template
     }).catch(err => {

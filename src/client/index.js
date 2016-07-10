@@ -9,7 +9,7 @@ import { getRouter } from '../shared/router'
 
 import '../shared/common/public.less'
 
-const store = configureStore(window.INITIAL_STATE)
+const store = configureStore(window.__INITIAL_STATE__)
 const history = syncHistoryWithStore(browserHistory, store)
 const router = getRouter(history)
 

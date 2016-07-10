@@ -7,7 +7,7 @@ var autoprefixer = require('autoprefixer')
 
 var definePlugin = new webpack.DefinePlugin({
   __API__BASE__: JSON.stringify(config.api.base),
-  __PRODUCTION__: false,
+  __PRODUCTION__: true,
 })
 var nodeModules = {}
 fs.readdirSync('node_modules').filter(function (x) {
