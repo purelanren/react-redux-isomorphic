@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/purelanren/react-redux-isomorphic#readme",
   "dependencies": {
-    "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1",
     "koa": "^1.2.0",
     "koa-cors": "0.0.16",
