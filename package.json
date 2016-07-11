@@ -4,8 +4,7 @@
   "description": "koa react redux isomorphic",
   "main": "index.js",
   "scripts": {
-    "api": "NODE_ENV=prod node ./apiserver/index.js",
-    "compile": "webpack",
+    "compile": "./node_modules/.bin/webpack",
     "build": "./node_modules/.bin/webpack --config webpack.server.js",
     "server": "node ./build/server.js",
     "dev-server": "node webpack/webpack-dev-server.js",
