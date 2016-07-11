@@ -1,14 +1,15 @@
 import React from 'react'
 import { Router, Route, IndexRoute } from 'react-router'
 
+// layout
+import Layout from './components/layout'
+
 // containers
-import Home from './containers/home'
-import Description from './containers/description'
+import Play from './containers/play'
 
 export const routes = (
-  <Route path="/">
-    <IndexRoute component={Home} />
-    <Route path="description" component={Description} />
+  <Route path="/" component={Layout}>
+    <IndexRoute component={Play} />
   </Route>
 )
 

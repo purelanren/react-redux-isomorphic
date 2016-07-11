@@ -9,7 +9,14 @@ export const loadOnServer = (dispatch, components) => {
       !component.WrappedComponent) {
       return true
     }
-    allActions = allActions.concat(component.WrappedComponent.serverActions)
+    const actions = component.WrappedComponent.serverActions
+    if (actions) {
+      allActions = allActions.concat(actions)
+    }
   })
-  return Promise.all(allActions.map(action => dispatch(action())))
+  console.log('allActions', allActions)
+  if (allActions.length) {
+    return Promise.all(allActions.map(action => dispatch(action())))
+  }
+  return Promise.resolve(() => {})
 }
