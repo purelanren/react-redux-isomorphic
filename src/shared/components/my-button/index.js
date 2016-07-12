@@ -30,7 +30,7 @@ class MyButton extends Component {
 }
 
 MyButton.propTypes = {
-  size: PropTypes.oneOf(['block', 'large', 'snall'])
+  size: PropTypes.oneOf(['block', 'large', 'small'])
 }
 
 export default MyButton
